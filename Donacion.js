@@ -18,15 +18,15 @@ elemento.addEventListener("click", function() {
             console.log("Documento: " + documento);
             console.log("Cantidad: " + cantidad);
             mensaje.textContent = "¡Gracias por su donación!";
-            mensaje.style.color = "white"; // Cambiar el color del mensaje a negro
+            mensaje.style.color = "white"; 
         } else {
             // Mostrar mensaje de error
             mensaje.textContent = "Error: El número de documento debe ser un valor numérico";
-            mensaje.style.color = "white"; // Cambiar el color del mensaje a rojo
+            mensaje.style.color = "white"; 
         }
     } else {
         // Mostrar mensaje de error
         mensaje.textContent = "Error: Todos los campos son obligatorios";
-        mensaje.style.color = "white"; // Cambiar el color del mensaje a rojo
+        mensaje.style.color = "white"; 
     }
 });
