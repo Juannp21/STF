@@ -13,32 +13,32 @@ document.addEventListener('DOMContentLoaded', function () {
             var parrafo = document.createElement('p');
             homeContainer.appendChild(parrafo);
 
-            // Obtener la palabra actual
+            
             var palabraActual = contenido[index];
 
-            // Inicializar el índice de la letra
+            
             var letraIndex = 0;
 
-            // Función para mostrar letras una por una
+            // Función para mostrar letras 
             function mostrarLetras() {
                 if (letraIndex < palabraActual.length) {
-                    // Añadir la letra actual al párrafo
+                    
                     parrafo.textContent += palabraActual.charAt(letraIndex);
 
-                    // Incrementar el índice de la letra
+                    
                     letraIndex++;
 
-                    // Esperar un tiempo antes de mostrar la próxima letra (ajusta según tu preferencia)
-                    setTimeout(mostrarLetras, 50); // Cambia el tiempo a tu gusto (en milisegundos)
+                    
+                    setTimeout(mostrarLetras, 50); 
                 } else {
-                    // Después de mostrar todas las letras, pasar a la próxima palabra
+                    
                     setTimeout(function () {
                         mostrarContenido(index + 1);
-                    }, 50); // Puedes ajustar este tiempo según tus preferencias
+                    }, 50); 
                 }
             }
 
-            // Iniciar la función para mostrar letras
+            
             mostrarLetras();
         }
     }
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     mostrarContenido(0);
 });
 document.addEventListener("DOMContentLoaded", function() {
-    // Oculta el indicador de carga
+    
     var loaderContainer = document.getElementById('loader-container');
     loaderContainer.style.display = 'none';
 });
